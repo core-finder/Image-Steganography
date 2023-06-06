@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Steganography by Sumit</title>
+    <meta name="author" content="Sumit">
+    <meta name="description" content="In this demonstration, you can witness the fundamental capabilities of the steganography.js JavaScript library. This powerful library offers a range of functions designed specifically for concealing or retrieving data within the alpha channel of an image.">
+    <meta name="keywords" content="steganography, text hiding, javascript, html5">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-info">Image Steganography</h1>
+        <div id="description">Within a matter of seconds, you have the ability to conceal and retrieve messages within an image. Follow these simple steps: upload a file, enter the message you wish to hide, and click the "Hide" button. If you want to retrieve messages from these images, upload the image containing the hidden text, and click the "Read" button. This user-friendly process ensures quick and effortless message hiding and retrieval.</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-success">Image:</h2>
+                    <input id="file" type="file"/>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-warning">Text:<span id="capacity"></span></h2>
+                    <textarea id="text">Your secret message</textarea>
+                    <div class="btns">
+                        <button id="hide" class="btn btn-outline-warning">Hide</button>
+                        <button id="read" class="btn btn-outline-success">Read</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="messageArea" class="mb-3 pb-3 invisible">
+            <h2 class="text-info">Message:</h2>
+            <div class="mb-3" id="message"></div>
+            <button id="copy" onclick="copyText()" class="btn btn-outline-info">Copy Text</button>
+        </div>
+        <div id="right" class="row">
+            <div id="original" class="col-md-6">
+                <h2>Plain Image:</h2>
+                <div class="card">
+                    <img id="img" class="card-img" src="" alt="Plain Image">
+                </div>
+            </div>
+            <div id="stego" class="col-md-6">
+                <h2>Encoded Image:</h2>
+                <div class="card">
+                    <img id="cover" class="card-img" src="" alt="Encoded Image">
+                    <div class="card-img-overlay">
+                        <a id="download" class="btn btn-success" download="cover.png" rel="nofollow">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/steg.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

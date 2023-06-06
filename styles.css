@@ -1,0 +1,87 @@
+body, html {
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background-image: url(bgimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffffb5;
+}
+.caed {
+    background-color: rgb(0, 0, 0);   
+}
+h1 {
+     color:white;
+    margin-bottom:10px;
+}
+text-info {
+    color: #f3efef;
+}
+text-success{
+    color: #f3efef;
+}
+#main {
+    position:relative;
+    width:940px;
+    padding:20px;
+    margin:auto;
+}
+#left {
+    position:relative;
+    float:left;
+    width:260px;
+    padding:10px;
+    margin-right:10px;
+    border-right:3px solid #7A91A1;
+    background-color:#ffffffc7;
+}
+.half {
+    position:relative;
+    display:inline-block;
+    width:49%;
+}
+#original {
+    vertical-align:top;
+}
+#messageArea {
+    width:100%;
+}
+.btns {
+    margin-top:15px;
+    margin-bottom:10px;
+    padding: 0 40px;
+}
+#description {
+    line-height:25px;
+    padding-bottom:5px;
+    border-bottom:1px solid lightgrey;
+}
+#capacity {
+    font-weight:normal;
+    font-size:15px;
+}
+.note {
+    font-size:9px;
+    text-align:center;
+    color:black;
+}
+.invisible {
+    visibility:hidden;
+}
+.clear {
+    clear:both;
+}
+.footer {
+    margin-top:25px;
+    width:100%;
+    text-align:right;
+}
+textarea{
+    padding:10px;
+    height:200px;
+    width:100%;
+    /* resize:none; */
+}
+h2{
+    margin-top:0;
+}
